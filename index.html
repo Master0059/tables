@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+  
+  <!-- jQuery library -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  
+  <!-- Popper JS -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+  
+  <!-- Latest compiled JavaScript -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my page</title>
+</head>
+
+<body>
+  <div class="container mb-5">
+    <div class="row py-3">
+      <div class="col">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(36, 35, 35);">
+
+          <a href="" class="navbar-brand"><img src="images/moonlogoc.png" alt="" style="width: 30px; height: 30px;"
+            class="mr-2 img-fluid">Magic Notes
+          </a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active"><a href="" class="nav-link">Home</a></li>
+              <li class="nav-item dropdown"><a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">About</a>
+                <div class="dropdown-menu">
+                  <a href="" class="dropdown-item">Facebook</a>
+                  <a href="" class="dropdown-item">twitter</a>
+                  <a href="" class="dropdown-item">Instagram</a>
+                  <a href="" class="dropdown-item">Linkin</a>
+                  <a href="" class="dropdown-item">Github</a>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline" action="">
+              <input type="search" class="form-control mr-sm-2" placeholder="search">
+              <button class="btn btn-outline-success my-2 my-sm-0">search</button>
+              
+            </form>
+          </div>
+          
+        </nav>
+        <div id="mycarousel" class="carousel slide mt-3 carousel-fade" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mycarousel" data-slide-to="1"></li>
+            <li data-target="#mycarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="2000">
+              <img src="images/notes1.jpg" class="d-block w-100" alt="" style="height: 450px;">
+              <div class="carousel-caption d-none d-md-block border border-dark bg-info">
+                <h1>Welcome to Magic notes</h1>
+                <p>you Can Easily save your notes here</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-interval="2000">
+              <img src="images/notes2.jpg" class="d-block w-100" alt="" style="height: 450px;">
+              <div class="carousel-caption d-none d-md-block border border-light bg-info">
+                <h1>Welcome to Magic notes</h1>
+                <p>you Can Easily save your notes here</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-interval="2000">
+              <img src="images/notes3.jpg" class="d-block w-100" alt="" style="height: 450px;">
+              <div class="carousel-caption d-none d-md-block border border-dark bg-info">
+                <h1>Welcome to Magic notes</h1>
+                <p>you Can Easily save your notes here.</p>
+              </div>
+            </div>
+          <a href="#mycarousel" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon" ></span>
+          </a>
+          <a href="#mycarousel" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon" ></span>
+          </a>
+        </div>
+
+        
+      </div>
+      <!-- card -->
+      <div class="container my-3">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Add a note</h3>
+            <div class="form-group">
+              <textarea class="form-control" id="Addtext" rows="1"></textarea>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-lg" id="addBtn">Add Note</button>
+          
+        </div>
+        <hr>
+        <h1>Your Notes</h1>
+        <hr>
+        <!-- <div id="Notes" class="Row container-fluid"> </div> -->
+        <div class="noteCard my-2 mx-2 card" style="width: 18rem;">
+          <div class="card-body">
+              <h5 class="card-title">Note</h5>
+              <p class="card-text"> sth</p>
+              <button id="${index}"onclick="deleteNote(this.id)" class="btn btn-primary"> Delete</button>
+          </div>
+        <div class="noteCard my-2 mx-2 card" style="width: 18rem;">
+          <div class="card-body">
+              <h5 class="card-title">Note</h5>
+              <p class="card-text"> sth</p>
+              <button id="${index}"onclick="deleteNote(this.id)" class="btn btn-primary"> Delete</button>
+          </div>
+        
+        
+      </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="notesapp.js"></script>
+  <script src="jaquery/jquery-3.6.0.min.js"></script>
+  <script src="jaquery/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
